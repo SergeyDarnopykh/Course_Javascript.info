@@ -2,7 +2,7 @@
 http://javascript.info/
 
 # TODO
-## ~~An introduction~~
+## An introduction
 ~~1.1 An introduction to JavaScript~~ <br>
 ~~1.2 Code editors~~ <br>
 ~~1.3 Developer Console~~ 
