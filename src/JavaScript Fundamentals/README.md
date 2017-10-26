@@ -9,7 +9,7 @@ uppercase. Otherwise - camelCase.
 The script cannot "die" because of Math. The worst we can get is `NaN`. <br>
 
 ### A string
-Backticks `` create a special string, where you can embed variables 
+Backticks create a special string, where you can embed variables 
 and expressions into a string by wrapping them in `${...}` <br>
 For example: <br>
 `const name = 'Sergey'` <br>
