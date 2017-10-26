@@ -1,4 +1,4 @@
-#Notes
+# Notes
 
 ## 2.4 Variables
 If we know the value of the constant before runtime - it should be
@@ -12,7 +12,7 @@ The script cannot "die" because of Math. The worst we can get is `NaN`. <br>
 Backticks `` create a special string, where you can embed variables 
 and expressions into a string by wrapping them in `${...}` <br>
 For example: <br>
-`const name = 'Sergey` <br>
+`const name = 'Sergey'` <br>
 `let str = *hello ${name}*` <br>
 `*` is a backtick here.
 

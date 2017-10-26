@@ -14,7 +14,7 @@ http://javascript.info/
 ~~2.3 The modern mode, "use strict"~~ <br>
 ~~2.4 Variables~~ <br>
 ~~2.5 Data types~~ <br>
-2.6 Type Conversions <br>
+~~2.6 Type Conversions~~ <br>
 2.7 Operators <br>
 2.8 Comparisons <br>
 2.9 Interaction: alert, prompt, confirm <br>
