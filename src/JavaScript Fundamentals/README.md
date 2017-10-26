@@ -62,4 +62,15 @@ For example: <br>
 `'2' > 1;` <br>
 true, string `'2'` becomes a number `2` 
 
+### Comparison with `null` and `undefined`
 
+`null` and `undefined` are a "sweet couple": they equal only
+each other (in the sense of `==`), but not any other value.
+
+### `>` and `<` comparisons with `null` and `undefined`
+
+Do not compare `null` and `undefined` using `<` and `>`. 
+They behave really strange this way. <br>
+
+It is a good idea to make a separate check for `null`
+and `undefined` while using operators `<` and `>`.
