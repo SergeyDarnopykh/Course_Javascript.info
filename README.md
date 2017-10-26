@@ -1,5 +1,5 @@
-# javascript.info
-http://javascript.info/
+# [javascript.info](http://javascript.info/)
+
 
 # TODO
 ## An introduction
