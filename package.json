@@ -13,7 +13,9 @@
   "devDependencies": {},
   "dependencies": {
     "browser": "^0.2.6",
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-less": "^3.3.2",
     "nodejs": "0.0.0",
     "sync": "^0.2.5"

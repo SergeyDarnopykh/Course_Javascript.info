@@ -11,28 +11,36 @@ The script cannot "die" because of Math. The worst we can get is `NaN`. <br>
 ### A string
 Backticks create a special string, where you can embed variables 
 and expressions into a string by wrapping them in `${...}` <br>
-For example: <br>
-`const name = 'Sergey';` <br>
-`let str = *hello ${name}*;` <br>
-`*` is a backtick here.
+For example: 
+```js
+const name = 'Sergey';
+let str = `hello ${name}`;
+```
+`
 
 ## 2.6 Type Conversions
 ### ToString
 Use `String(value)` to convert value to a string. <br>
-`Number(null) = 0;` <br>
-`Number(undefined) = NaN;` 
+```js
+Number(null) = 0;
+Number(undefined) = NaN;
+```
 
 ### ToNumber
 Use `Number(value)` or `+` to convert value to a number. <br> 
 `+` does not always convert a value to a number. <br>
 For example: <br>
-`3 + '1' = '31';`
+```javascript
+3 + '1' = '31';
+```
 
 ### ToBoolean
 Use `Boolean(value)` to convert value to a boolean. <br> 
 Only `0`, `false`, `''` , `null`, `undefined`, `NaN` = false <br>
-`Boolean('0') = true;` <br> 
-`Boolean(' ') = true;`
+```js
+Boolean('0') = true; 
+Boolean(' ') = true;
+```
 
 ## 2.7 Operators
 ### Assignment
@@ -50,8 +58,10 @@ Increment/decrement can be applied only to a variable. <br>
 ### Comma
 You can divide expressions by `,`, and only the last one
 will be returned. <br>
-For example: <br>
-`let a = (10 + 17, 3 + 4);` <br>
+For example: 
+```js
+let a = (10 + 17, 3 + 4);
+```
 `a` is equal to `7`.
 
 ## 2.8 Comparisons
@@ -74,3 +84,4 @@ They behave really strange this way. <br>
 
 It is a good idea to make a separate check for `null`
 and `undefined` while using operators `<` and `>`.
+
