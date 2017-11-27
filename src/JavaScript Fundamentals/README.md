@@ -84,3 +84,15 @@ They behave really strange this way. <br>
 It is a good idea to make a separate check for `null`
 and `undefined` while using operators `<` and `>`.
 
+## 2.12 Loops: `while` and `for`
+### Labels for break/continue
+
+```javascript
+outer: 
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        let input = prompt(`Value at coords (${i},${j})`, '');
+        if (!input) break outer; // (*)
+    }
+}  
+```

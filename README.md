@@ -19,7 +19,7 @@
 - [x] Interaction: `alert`, `prompt`, `confirm`
 - [x] Conditional operators: `if`, `?`
 - [x] Logical operators
-- [ ] Loops: `while` and `for`
+- [x] Loops: `while` and `for`
 - [ ] The `switch` statement
 - [ ] Functions
 - [ ] Function expressions and arrows 

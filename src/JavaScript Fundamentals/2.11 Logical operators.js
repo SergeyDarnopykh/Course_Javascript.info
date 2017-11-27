@@ -117,7 +117,6 @@ if (age < 14 || age > 90) {
 /* 2 */    if (-1 && 0) alert( 'second' );
 /* 3 */    if (null || -1 && 1) alert( 'third' );
 
-
 /*
     Answer:
     1, 3, because operator && returns first false value or the last one and
