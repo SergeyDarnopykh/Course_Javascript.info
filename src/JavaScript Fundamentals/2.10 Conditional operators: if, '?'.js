@@ -12,7 +12,6 @@ if ("0") {
 
 /*
     Answer:
-
     Yes, because non-empty string in javascript is true.
 */
 
@@ -41,9 +40,9 @@ if (jsOfficialName === 'ECMAScript') {
 
     Using if..else, write the code which gets a number via prompt and then shows in alert:
 
-        1, if the value is greater than zero,
-        -1, if less than zero,
-        0, if equals zero.
+    1, if the value is greater than zero,
+    -1, if less than zero,
+    0, if equals zero.
 
     In this task we assume that the input is always a number.
 */
@@ -99,15 +98,16 @@ if (login === null) {
     importance: 5
 
     Rewrite this if using the ternary operator '?':
-
+*/
     if (a + b < 4) {
         result = 'Below';
     } else {
         result = 'Over';
     }
-*/
 
+// Answer:
 result = (a + b < 4) ? 'Below' : 'Over';
+
 
 /*
     Rewrite 'if..else' into '?'
@@ -118,7 +118,7 @@ result = (a + b < 4) ? 'Below' : 'Over';
     For readability, it’s recommended to split the code into multiple lines.
 
     let message;
-
+*/
     if (login == 'Employee') {
         message = 'Hello';
     } else if (login == 'Director') {
@@ -128,8 +128,8 @@ result = (a + b < 4) ? 'Below' : 'Over';
     } else {
         message = '';
     }
-*/
 
+// Answer:
 let message = (login == 'Employee') ? 'Hello' :
     (login == 'Director') ? 'Greetings' :
     (login == '') ? 'No login' : '';
