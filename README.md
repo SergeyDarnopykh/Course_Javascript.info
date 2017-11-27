@@ -22,7 +22,7 @@
 - [x] Loops: `while` and `for`
 - [x] The `switch` statement
 - [x] Functions
-- [ ] Function expressions and arrows 
+- [x] Function expressions and arrows 
 - [ ] JavaScript specials 
 
 ### Code Quality
