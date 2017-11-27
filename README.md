@@ -15,7 +15,7 @@
 - [x] Operators
 - [x] Comparisons
 - [x] Interaction: alert, prompt, confirm
-- [ ] Conditional operators: if, '?'
+- [x] Conditional operators: if, '?'
 - [ ] Logical operators
 - [ ] Loops: while and for
 - [ ] The "switch" statement
