@@ -23,7 +23,7 @@
 - [x] The `switch` statement
 - [x] Functions
 - [x] Function expressions and arrows 
-- [ ] JavaScript specials 
+- [x] JavaScript specials 
 
 ### Code Quality
 - [ ] Debugging in Chrome
