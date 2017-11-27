@@ -1,11 +1,13 @@
 # Javascript.info
 
-## An introduction
+## Part 1: The JavaScript language
+
+### An introduction
 - [x] An introduction to JavaScript
 - [x] Code editors
 - [x] Developer Console 
 
-## JavaScript Fundamentals 
+### JavaScript Fundamentals 
 - [x] Hello World
 - [x] Code structure
 - [x] The modern mode, `use strict` 
