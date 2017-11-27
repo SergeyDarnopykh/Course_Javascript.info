@@ -21,11 +21,17 @@
 - [x] Logical operators
 - [x] Loops: `while` and `for`
 - [x] The `switch` statement
-- [ ] Functions
+- [x] Functions
 - [ ] Function expressions and arrows 
 - [ ] JavaScript specials 
 
-
+### Code Quality
+- [ ] Debugging in Chrome
+- [ ] Coding style
+- [ ] Comments
+- [ ] Ninja Code
+- [ ] Automated testing with mocha
+- [ ] Polyfills
 
 
 

@@ -96,3 +96,15 @@ for (let i = 0; i < 3; i++) {
     }
 }  
 ```
+
+## 2.14 Functions
+### Default values
+If we want to use a “default” value, then we can specify it after `=`:
+
+```js
+function showMessage(from, text = "no text given") {
+  alert( from + ": " + text );
+}
+
+showMessage("Ann"); // Ann: no text given
+```
