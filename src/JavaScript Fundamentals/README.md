@@ -16,7 +16,6 @@ For example:
 const name = 'Sergey';
 let str = `hello ${name}`;
 ```
-`
 
 ## 2.6 Type Conversions
 ### ToString
