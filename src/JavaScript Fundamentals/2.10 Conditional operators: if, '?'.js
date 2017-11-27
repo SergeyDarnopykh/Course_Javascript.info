@@ -4,7 +4,6 @@
 
     Will alert be shown?
 */
-
 if ("0") {
     alert( 'Hello' );
 }
@@ -99,11 +98,11 @@ if (login === null) {
 
     Rewrite this if using the ternary operator '?':
 */
-    if (a + b < 4) {
-        result = 'Below';
-    } else {
-        result = 'Over';
-    }
+if (a + b < 4) {
+    result = 'Below';
+} else {
+    result = 'Over';
+}
 
 // Answer:
 result = (a + b < 4) ? 'Below' : 'Over';
@@ -119,15 +118,15 @@ result = (a + b < 4) ? 'Below' : 'Over';
 
     let message;
 */
-    if (login == 'Employee') {
-        message = 'Hello';
-    } else if (login == 'Director') {
-        message = 'Greetings';
-    } else if (login == '') {
-        message = 'No login';
-    } else {
-        message = '';
-    }
+if (login == 'Employee') {
+    message = 'Hello';
+} else if (login == 'Director') {
+    message = 'Greetings';
+} else if (login == '') {
+    message = 'No login';
+} else {
+    message = '';
+}
 
 // Answer:
 let message = (login == 'Employee') ? 'Hello' :

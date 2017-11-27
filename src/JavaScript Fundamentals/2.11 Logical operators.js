@@ -4,7 +4,7 @@
 
     What the code below is going to output?
 */
-    alert( null || 2 || undefined );
+alert( null || 2 || undefined );
 
 /*
     Answer:
@@ -18,7 +18,7 @@
 
     What the code below will output?
 */
-    alert( alert(1) || 2 || alert(3) );
+alert( alert(1) || 2 || alert(3) );
 
 
 /*
@@ -34,7 +34,7 @@
 
     What this code is going to show?
 */
-    alert( 1 && null && 2 );
+alert( 1 && null && 2 );
 
 
 /*
@@ -49,7 +49,7 @@
 
     What will this code show?
 */
-    alert( alert(1) && alert(2) );
+alert( alert(1) && alert(2) );
 
 /*
     Answer:
@@ -63,7 +63,7 @@
 
     What will be the result?
 */
-    alert( null || 2 && 3 || 4 );
+alert( null || 2 && 3 || 4 );
 
 /*
     Answer:

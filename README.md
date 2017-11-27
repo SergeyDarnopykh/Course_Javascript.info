@@ -20,7 +20,7 @@
 - [x] Conditional operators: `if`, `?`
 - [x] Logical operators
 - [x] Loops: `while` and `for`
-- [ ] The `switch` statement
+- [x] The `switch` statement
 - [ ] Functions
 - [ ] Function expressions and arrows 
 - [ ] JavaScript specials 

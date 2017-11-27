@@ -4,11 +4,11 @@
 
     What is the last value alerted by this code? Why?
 */
-    let i = 3;
+let i = 3;
 
-    while (i) {
-        alert( i-- );
-    }
+while (i) {
+    alert( i-- );
+}
 
 /*
     Answer:
@@ -23,13 +23,13 @@
     For every loop, write down which values it shows, in your opinion. And then compare with the answer.
     Both loops alert same values or not?
 */
-    // 1. The prefix form ++i:
-    let i = 0;
-    while (++i < 5) alert( i );
+// 1. The prefix form ++i:
+let i = 0;
+while (++i < 5) alert( i );
 
-    // 2. The postfix form i++
-    let i = 0;
-    while (i++ < 5) alert( i );
+// 2. The postfix form i++
+let i = 0;
+while (i++ < 5) alert( i );
 
 /*
     Answer:
@@ -45,12 +45,11 @@
     For each loop write down which values it is going to show. Then compare with the answer.
     Both loops alert same values or not?
 */
+// 1. The postfix form:
+for (let i = 0; i < 5; i++) alert( i );
 
-    // 1. The postfix form:
-    for (let i = 0; i < 5; i++) alert( i );
-
-    // 2. The prefix form:
-    for (let i = 0; i < 5; ++i) alert( i );
+// 2. The prefix form:
+for (let i = 0; i < 5; ++i) alert( i );
 
 /*
     Answer:
