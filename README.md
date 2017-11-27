@@ -1,4 +1,4 @@
-# [javascript.info](http://javascript.info/)
+# Javascript.info
 
 ## An introduction
 - [x] 1.1 An introduction to JavaScript
