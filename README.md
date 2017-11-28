@@ -26,12 +26,12 @@
 - [x] JavaScript specials 
 
 ### Code Quality
-- [ ] Debugging in Chrome
-- [ ] Coding style
-- [ ] Comments
-- [ ] Ninja Code
-- [ ] Automated testing with mocha
-- [ ] Polyfills
+- [x] Debugging in Chrome
+- [x] Coding style
+- [x] Comments
+- [x] Ninja Code
+- [x] Automated testing with mocha
+- [x] Polyfills
 
 ### Objects: the basics
 - [ ] Objects
