@@ -35,7 +35,7 @@
 
 ### Objects: the basics
 - [x] Objects
-- [ ] Garbage collection
+- [x] Garbage collection
 - [ ] Symbol type
 - [ ] Object methods, `this`
 - [ ] Object to primitive conversion
