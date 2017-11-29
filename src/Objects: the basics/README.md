@@ -130,3 +130,122 @@ The following “garbage collection” steps are regularly performed:
 - `Generational collection` – objects are split into two sets: “new ones” and “old ones”. Many objects appear, do their job and die fast, they can be cleaned up aggressively. Those that survive for long enough, become “old” and are examined less often.
 - `Incremental collection` – if there are many objects, and we try to walk and mark the whole object set at once, it may take some time and introduce visible delays in the execution. So the engine tries to split the garbage collection into pieces. Then the pieces are executed one by one, separately. That requires some extra bookkeeping between them to track changes, but we have many tiny delays instead of a big one.
 - `Idle-time collection` – the garbage collector tries to run only while the CPU is idle, to reduce the possible effect on the execution.
+
+## Symbol type
+
+### Symbol
+“Symbol” value represents a unique identifier.
+```js
+let id = Symbol();
+```
+
+We can also give symbol a description (also called a symbol name), 
+mostly useful for debugging purposes:
+
+```js
+let id = Symbol("id");
+```
+
+### Symbols don't auto convert to string
+This will give an error:
+```js
+let id = Symbol("id");
+alert(id); // TypeError: Cannot convert a Symbol value to a string
+```
+
+If we really want to show a symbol,
+ we need to call .toString() on it, like here:
+
+```js
+let id = Symbol("id");
+alert(id.toString()); // Symbol(id), now it works
+```
+
+### “Hidden” properties
+Symbols allow us to create “hidden” properties of an object,
+that no other part of code can occasionally access or overwrite.
+
+For instance, if we want to store an “identifier” 
+for the object user, we can use a symbol as a key for it:
+```js
+let user = { name: "John" };
+let id = Symbol("id");
+
+user[id] = "ID Value";
+alert( user[id] ); // we can access the data using the symbol as the key
+```
+
+If there's another script, that needs to set its own id,
+then that script can create its own Symbol("id"), like this:
+
+```js
+let id = Symbol("id");
+user[id] = "Their id value";
+```
+
+There will be no conflict, because symbols are always different, 
+even if they have the same name.
+
+### Symbols in a literal
+If we want to use a symbol in an object literal, we need square brackets 
+(because we need the value from variable id as the the key, not the string "id"):
+```js
+let id = Symbol("id");
+
+let user = {
+  name: "John",
+  [id]: 123 // not just "id: 123"
+};
+```
+
+### Symbols in `for…in`
+Symbols are skipped in `for...in` loop, but they are copied by `Object.assign` method.
+
+### Other types as the keys in objects
+Property keys of other types are coerced to strings.
+
+### Global symbols
+In order to create or read a symbol in the registry, use `Symbol.for(key)`.
+
+That call checks the global registry, and if there’s a symbol described as `key`, 
+then returns it, otherwise creates a new symbol `Symbol(key)`
+and stores it in the registry by the given `key`.
+
+For instance:
+```js
+// read from the global registry
+let id = Symbol.for("id"); // if the symbol did not exist, it is created
+
+// read it again
+let idAgain = Symbol.for("id");
+
+// the same symbol
+alert( id === idAgain ); // true
+```
+
+### Symbol.keyFor
+
+For global symbols, not only Symbol.for(key) returns a symbol by name, 
+but there’s a reverse call: Symbol.keyFor(sym), that does the reverse: 
+returns a name by a global symbol.
+
+For instance:
+```js
+let sym = Symbol.for("name");
+let sym2 = Symbol.for("id");
+
+// get name from symbol
+alert( Symbol.keyFor(sym) ); // name
+alert( Symbol.keyFor(sym2) ); // id
+```
+
+### System symbols
+They are listed in the specification in the Well-known symbols table:
+- `Symbol.hasInstance`
+- `Symbol.isConcatSpreadable`
+- `Symbol.iterator`
+- `Symbol.toPrimitive`
+- …and so on.
+
+For instance, `Symbol.toPrimitive` allows us to describe object 
+to primitive conversion.
