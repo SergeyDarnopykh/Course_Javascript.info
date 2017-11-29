@@ -34,7 +34,7 @@
 - [x] Polyfills
 
 ### Objects: the basics
-- [ ] Objects
+- [x] Objects
 - [ ] Garbage collection
 - [ ] Symbol type
 - [ ] Object methods, `this`
