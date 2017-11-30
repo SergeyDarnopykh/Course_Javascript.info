@@ -249,3 +249,58 @@ They are listed in the specification in the Well-known symbols table:
 
 For instance, `Symbol.toPrimitive` allows us to describe object 
 to primitive conversion.
+
+## Objects methods, `this`
+### Method shorthand
+These objects almost the same (there are some subtle differences 
+related to object inheritance):
+```js
+let user = {
+  sayHi: function() {
+    alert("Hello");
+  }
+};
+
+let user = {
+  sayHi() {
+    alert("Hello");
+  }
+};
+```
+### When `this` is not defined in a function
+In strict mode:
+```js
+function sayHi() {
+  alert(this);
+}
+
+sayHi(); // undefined
+```
+In non-strict mode the value of this will be the global object 
+(window in a browser). This is a historical behavior that "use strict" fixes.
+
+### Differences between `this` in js and other programming languages 
+In JavaScript `this` is “free”, its value is evaluated at call-time and
+does not depend on where the method was declared, 
+but rather on what’s the object “before the dot”.
+
+In many other programming languages `this` is bound
+(every object has its own `this`). 
+
+### How methods work
+To make `user.hi()` calls work, JavaScript uses a trick – 
+the dot `.` returns not a function, but a value of the special Reference Type.
+
+The Reference Type is a “specification type”. 
+We can’t explicitly use it, but it is used internally by the language.
+
+The value of Reference Type is a three-value combination (base, name, strict), 
+where:
+- base is the object.
+- name is the property.
+- strict is true if use strict is in effect.
+
+### Arrow functions have no “this”
+Arrow functions are special: they don’t have their “own” this.
+If we reference this from such a function, it’s taken from the outer “normal”
+function.

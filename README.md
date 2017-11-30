@@ -37,7 +37,7 @@
 - [x] Objects
 - [x] Garbage collection
 - [x] Symbol type
-- [ ] Object methods, `this`
+- [x] Object methods, `this`
 - [ ] Object to primitive conversion
 - [ ] Constructor, operator `new`
 
